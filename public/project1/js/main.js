@@ -134,8 +134,8 @@ function getPosition(obj) {
 	}
 	a= getAcceleration(obj);
 	obj.v.y-=a.y;
-	p.x += v.x;
+	p.x += v.x || 0;
 	p.y += v.y;
-	p.z += v.z;
+	p.z += v.z || 0;
 	return p;
 }
