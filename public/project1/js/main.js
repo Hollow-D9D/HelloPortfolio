@@ -19,18 +19,18 @@ setupWorld();
 
 function setupWorld() {
 	drawAxes();
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	// addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
-	addSphere({y:200,ay:0.02})
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	addSphere({x:parseInt(Math.random()*10),y:parseInt(Math.random()*10),z:parseInt(Math.random()*10), vx: parseInt(Math.random()*5), vy:parseInt(Math.random()*5),vz:parseInt(Math.random()*5) });
+	
 
 
 	// TODO
@@ -120,15 +120,15 @@ function getPosition(obj) {
 	p={ x:obj.pos.x
 		,y:obj.pos.y,
 		z:obj.pos.z}
-	if(p.x>200 || p.x<0)
+	if(p.x>100 || p.x<0)
 	{
 		obj.v.x = -(obj.v.x);
 	}
-	if(p.y>200 || p.y<0)
+	if(p.y>100 || p.y<0)
 	{
 		obj.v.y = -(obj.v.y);
 	}
-	if(p.z>200 || p.z<0)
+	if(p.z>100 || p.z<0)
 	{
 		obj.v.z = -(obj.v.z);
 	}
